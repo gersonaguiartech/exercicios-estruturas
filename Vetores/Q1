@@ -1,0 +1,11 @@
+def maior_menor_estatico():
+    print("Encontrando Maior e Menor")
+    
+    vetor = [1, 2, 4, 16, 32, 64, -128] [cite: 82]
+    
+    menor = min(vetor)
+    maior = max(vetor)
+    
+    print(f"Analisando o vetor: {vetor}")
+    print(f"O menor elemento é: {menor}")
+    print(f"O maior elemento é: {maior}")
