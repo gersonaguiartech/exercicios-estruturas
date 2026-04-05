@@ -1,0 +1,5 @@
+vet = []
+for i in range(1, 101):
+    vet.append(i)
+
+print(vet)
