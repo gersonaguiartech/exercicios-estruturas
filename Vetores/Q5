@@ -1,0 +1,14 @@
+n = int(input("Qual será o tamanho do vetor? "))
+vetor = []
+
+for i in range(n):
+    vetor.append(int(input(f"Digite o {i+1}º valor: ")))
+
+menor = vetor[0]
+maior = vetor[0]
+
+for num in vetor:
+    if num < menor: menor = num
+    if num > maior: maior = num
+
+print(f"Menor valor: {menor} | Maior valor: {maior}")
