@@ -1,11 +1,15 @@
-def maior_menor_estatico():
-    print("Encontrando Maior e Menor")
-    
-    vetor = [1, 2, 4, 16, 32, 64, -128] [cite: 82]
-    
-    menor = min(vetor)
-    maior = max(vetor)
-    
-    print(f"Analisando o vetor: {vetor}")
-    print(f"O menor elemento é: {menor}")
-    print(f"O maior elemento é: {maior}")
+# Inicializamos o vetor com os valores dados
+vetor = [1, 2, 4, 16, 32, 64, -128]
+
+# Assumimos que o primeiro elemento é o maior e o menor ao mesmo tempo
+menor = vetor[0]
+maior = vetor[0]
+
+# Percorremos o vetor verificando um por um
+for num in vetor:
+    if num < menor:
+        menor = num  # Encontrou um menor, atualiza a variável
+    if num > maior:
+        maior = num  # Encontrou um maior, atualiza a variável
+
+print(f"O menor elemento é {menor} e o maior é {maior}.")
