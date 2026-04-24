@@ -1,0 +1,9 @@
+vetor = []
+soma = 0
+
+for i in range(50):
+    numero = int(input(f"Digite o {i+1}º valor: "))
+    vetor.append(numero)
+    soma += numero # Acumula o valor na variável soma
+
+print(f"A soma de todos os 50 elementos é: {soma}")
